@@ -23,3 +23,9 @@ A model capable of predicting next-day gold prices with high accuracy and an int
 - RMSE (Root Mean Square Error)
 - MAE (Mean Absolute Error)
 - R² Score
+
+## Gruop Members
+-Husam Mohamed Yousif Hassan
+-Amir.M.Shat
+-Zayed Khaled Habeb Alkhulaqi
+-Mohammad Nassar Alsmadi
