@@ -1,5 +1,7 @@
 # Week 03 Reflection
 
+https://github.com/Ss-11444555/GoldValue-Predictor/tree/main
+
 What was challenging?
 Coordinating task dependencies and estimating realistic timeframes for each activity was quite demanding.
 
