@@ -1,5 +1,7 @@
 # Week 03 Reflection
 
+https://github.com/Ss-11444555/GoldValue-Predictor/tree/main
+
 What was challenging?
 It was tough to align task dependencies properly and assign timeframes that matched our actual capacity.
 
