@@ -1,5 +1,7 @@
 # Week 03 Reflection
 
+https://github.com/Ss-11444555/GoldValue-Predictor/tree/main
+
 What was challenging?
 The main difficulty was managing how tasks depended on one another and ensuring the duration estimates were achievable.
 
