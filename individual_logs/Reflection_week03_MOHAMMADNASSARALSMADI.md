@@ -10,6 +10,8 @@ https://github.com/Ss-11444555/GoldValue-Predictor/tree/main
 
 
 
+https://github.com/Ss-11444555/GoldValue-Predictor/tree/main
+
 **What was challenging?**  
 Scheduling the task dependencies and choosing realistic durations was challenging because it required understanding how each phase of the project connects. Estimating how long data collection, preprocessing, and model training would take needed careful thinking, especially to avoid overlap and delays. Another challenge was coordinating with teammates to align our work schedules and ensure that tasks were not duplicated.
 
