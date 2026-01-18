@@ -15,12 +15,6 @@ The project lifecycle followed a phased approach aligned with academic project m
 - Model evaluation and visualization
 - Development of an interactive prediction interface
 - Documentation and reporting
-
-### Out of Scope
-- High-frequency trading systems
-- Real-time automated trading execution
-- Deployment to cloud production environments
-
 ---
 
 ## Project Planning
@@ -36,72 +30,6 @@ Planning documents are stored in the `planning/` and `schedule/` directories.
 
 ---
 
-## Schedule and Milestones
-
-The project was divided into weekly milestones:
-
-1. Project initiation and scope definition  
-2. Data collection and preprocessing  
-3. Exploratory data analysis  
-4. Feature engineering  
-5. Model training and evaluation  
-6. User interface design  
-7. Final documentation and reporting  
-
-Scheduling artifacts such as work breakdown structures (WBS), timelines, and task tracking are stored in the `schedule/` folder.
-
----
-
-## Risk Management
-
-Potential project risks were identified and managed throughout the project:
-
-| Risk | Mitigation Strategy |
-|-----|---------------------|
-| Data availability issues | Use of reliable real-time data source (Yahoo Finance) |
-| Data quality problems | Data cleaning and validation steps |
-| Model overfitting | Train-test split and evaluation metrics |
-| Scope creep | Clearly defined project scope |
-| Time constraints | Weekly milestones and progress monitoring |
-
-Risk-related documents are maintained in the `monitoring/` folder.
-
----
-
-## Quality Management
-
-Quality assurance was maintained through:
-
-- Code readability and modular design
-- Data validation and consistency checks
-- Model performance evaluation using RMSE and R²
-- Visualization to verify model behavior
-
-Quality-related documents are stored in the `quality/` directory.
-
----
-
-## Monitoring and Control
-
-Project progress was continuously monitored by:
-
-- Tracking completed tasks against planned milestones
-- Version control using Git and GitHub
-- Regular commits to document progress and changes
-
-Monitoring and control artifacts are maintained in the `monitoring/` directory.
-
----
-
-## Stakeholder and Communication Management
-
-Key stakeholders included:
-- Course instructor / project supervisor
-- Project evaluator
-
-Communication planning and stakeholder documentation are stored in the `stakeholders/` and `communication/` directories.
-
----
 
 ## Project Deliverables
 
@@ -116,3 +44,57 @@ The main deliverables of the project include:
 Deliverables are archived in the `reports/` directory.
 
 ---
+GoldValue-Predictor/
+│
+├── README.md
+│
+├── notebooks/
+│   └── goldPrice_Prediction.ipynb
+│
+├── src/
+|   └── main.py
+│   ├── model
+│         ├── gold_price_model.pkl
+│         └── scaler.pkl
+│     
+│
+|
+│   
+│
+├── planning/
+│   ├── GoldenValue_Predictor_Cost_Estimate_week6.xlsx
+│   ├── projectPlan_Week03_GolValuePredictor.xlsx
+|   ├──Week04_WBS04.md
+│   └── WBS_Week04.md
+│
+├── schedule/
+│   ├── Activity_List_Week09.md
+│   ├── AoA_Diagram_Week09.pdf
+│   └── PDM_Table_Week09.xlsx
+│
+├── budget/
+│   └── Cost_Resource_Plan_Week05.md
+│
+│
+├── quality/
+|   ├── Risk_Register_Week06.md
+│   └── Quality_Checklist_Week06.md
+│
+├── monitoring/
+│   ├── Corrective_Actions_Week08.md
+│   └── Progress_Tracking_Week08.md
+│
+├── stakeholders/
+│   └── Stakeholder_List_Week07.md
+│
+├── communication/
+│   └── Communication_Plan_Week07.md
+│
+├── reports/
+│   └── final_project_report.pdf
+│
+└── templates/
+    └── index.html
+
+ 
+
