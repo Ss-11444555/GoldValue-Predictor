@@ -44,3 +44,4 @@ The main deliverables of the project include:
 Deliverables are archived in the `reports/` directory.
 
 ---
+<img width="750" height="852" alt="image" src="https://github.com/user-attachments/assets/69cd6a08-29e4-49e6-b7dc-6055be7530b6" />
