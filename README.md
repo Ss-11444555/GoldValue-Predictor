@@ -4,7 +4,7 @@ This project was managed using standard **project management principles** to ens
 
 The project lifecycle followed a phased approach aligned with academic project management practices.
 
----
+
 
 ## Project Scope
 
@@ -21,7 +21,7 @@ The project lifecycle followed a phased approach aligned with academic project m
 - Real-time automated trading execution
 - Deployment to cloud production environments
 
----
+
 
 ## Project Planning
 
@@ -34,7 +34,7 @@ Project planning activities included:
 
 Planning documents are stored in the `planning/` and `schedule/` directories.
 
----
+
 
 ## Schedule and Milestones
 
@@ -50,7 +50,7 @@ The project was divided into weekly milestones:
 
 Scheduling artifacts such as work breakdown structures (WBS), timelines, and task tracking are stored in the `schedule/` folder.
 
----
+
 
 ## Risk Management
 
@@ -66,7 +66,7 @@ Potential project risks were identified and managed throughout the project:
 
 Risk-related documents are maintained in the `monitoring/` folder.
 
----
+
 
 ## Quality Management
 
@@ -79,7 +79,7 @@ Quality assurance was maintained through:
 
 Quality-related documents are stored in the `quality/` directory.
 
----
+
 
 ## Monitoring and Control
 
@@ -91,7 +91,7 @@ Project progress was continuously monitored by:
 
 Monitoring and control artifacts are maintained in the `monitoring/` directory.
 
----
+
 
 ## Stakeholder and Communication Management
 
@@ -101,7 +101,7 @@ Key stakeholders included:
 
 Communication planning and stakeholder documentation are stored in the `stakeholders/` and `communication/` directories.
 
----
+
 
 ## Project Deliverables
 
@@ -115,8 +115,8 @@ The main deliverables of the project include:
 
 Deliverables are archived in the `reports/` directory.
 
----
 
 
----
+
+
 <img width="750" height="852" alt="image" src="https://github.com/user-attachments/assets/69cd6a08-29e4-49e6-b7dc-6055be7530b6" />
