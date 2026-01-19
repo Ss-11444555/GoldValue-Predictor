@@ -1,119 +1,208 @@
-## Project Management Approach
+#  GoldValue Predictor
 
-This project was managed using standard **project management principles** to ensure structured planning, execution, monitoring, and delivery.
+## 1. Project Overview
 
-The project lifecycle followed a phased approach aligned with academic project management practices.
+**GoldValue Predictor** is an academic project that applies **machine learning techniques** together with **project management practices** to predict gold prices using historical financial data.
 
-
-
-## Project Scope
-
-### In Scope
-- Data collection using real-time financial sources
-- Data cleaning and exploratory data analysis (EDA)
-- Feature engineering and regression modeling
-- Model evaluation and visualization
-- Development of an interactive prediction interface
-- Documentation and reporting
-
-### Out of Scope
-- High-frequency trading systems
-- Real-time automated trading execution
-- Deployment to cloud production environments
+The project demonstrates a complete end-to-end workflow, starting from problem definition and planning, through data analysis and model development, and ending with evaluation and deployment preparation.  
+It is designed to show both **technical AI skills** and **structured project management**.
 
 
 
-## Project Planning
+## 2. Problem Statement
 
-Project planning activities included:
+Gold prices fluctuate daily due to global economic conditions, currency exchange rates, inflation, and geopolitical events.  
+Predicting these price movements is challenging for investors and analysts.
 
-- Defining project objectives and success criteria
-- Identifying required tools, libraries, and data sources
-- Structuring the repository into logical project management folders
-- Creating a development timeline with milestones
-
-Planning documents are stored in the `planning/` and `schedule/` directories.
+This project aims to develop a predictive model that can **forecast gold closing prices** using historical data and engineered technical indicators to support informed decision-making.
 
 
 
-## Schedule and Milestones
+## 3. Project Objectives
 
-The project was divided into weekly milestones:
-
-1. Project initiation and scope definition  
-2. Data collection and preprocessing  
-3. Exploratory data analysis  
-4. Feature engineering  
-5. Model training and evaluation  
-6. User interface design  
-7. Final documentation and reporting  
-
-Scheduling artifacts such as work breakdown structures (WBS), timelines, and task tracking are stored in the `schedule/` folder.
+- Collect and preprocess historical gold price data
+- Perform exploratory data analysis (EDA)
+- Engineer relevant technical features
+- Train and evaluate regression-based machine learning models
+- Measure model performance using standard evaluation metrics
+- Apply formal project management practices throughout the project lifecycle
 
 
 
-## Risk Management
+## 4. Project Management Approach
 
-Potential project risks were identified and managed throughout the project:
+The project was managed using a **structured project management framework**, aligned with academic standards and inspired by **CRISP-DM** and **PMBOK** principles.
 
-| Risk | Mitigation Strategy |
-|-----|---------------------|
-| Data availability issues | Use of reliable real-time data source (Yahoo Finance) |
-| Data quality problems | Data cleaning and validation steps |
-| Model overfitting | Train-test split and evaluation metrics |
-| Scope creep | Clearly defined project scope |
-| Time constraints | Weekly milestones and progress monitoring |
+### Project Phases
+1. Business Understanding  
+2. Data Understanding  
+3. Data Preparation  
+4. Modeling  
+5. Evaluation  
+6. Deployment Preparation & Monitoring  
 
-Risk-related documents are maintained in the `monitoring/` folder.
-
-
-
-## Quality Management
-
-Quality assurance was maintained through:
-
-- Code readability and modular design
-- Data validation and consistency checks
-- Model performance evaluation using RMSE and R²
-- Visualization to verify model behavior
-
-Quality-related documents are stored in the `quality/` directory.
+Each phase is supported by documented planning, scheduling, risk management, quality control, and progress monitoring.
 
 
 
-## Monitoring and Control
+## 5. Data Source and Understanding
 
-Project progress was continuously monitored by:
+- **Data Source:** Yahoo Finance (via `yfinance`)
+- **Instrument:** Gold Futures (GC=F)
+- **Period Covered:** 2010 to present
+- **Frequency:** Daily prices
 
-- Tracking completed tasks against planned milestones
-- Version control using Git and GitHub
-- Regular commits to document progress and changes
-
-Monitoring and control artifacts are maintained in the `monitoring/` directory.
-
-
-
-## Stakeholder and Communication Management
-
-Key stakeholders included:
-- Course instructor / project supervisor
-- Project evaluator
-
-Communication planning and stakeholder documentation are stored in the `stakeholders/` and `communication/` directories.
+The data is downloaded dynamically at runtime.  
+No static dataset is stored in the repository to ensure:
+- Real-time updates
+- Reproducibility
+- Compliance with data science best practices
 
 
+## 6. Data Preparation & Exploratory Data Analysis (EDA)
 
-## Project Deliverables
+### Data Cleaning
+- Flattening multi-level column headers
+- Handling missing values
+- Ensuring consistent date and numeric formats
 
-The main deliverables of the project include:
+### Exploratory Analysis
+- Time-series trend analysis of gold prices
+- Distribution analysis of closing prices
+- Correlation analysis between features
 
-- Clean and documented Jupyter notebooks
-- Machine learning regression model
-- Interactive gold price prediction interface
-- Project management documentation
-- Final project report
+EDA helps identify trends, volatility, and relationships between variables before modeling.
 
-Deliverables are archived in the `reports/` directory.
+
+
+## 7. Feature Engineering
+
+To improve prediction performance, the following features were created:
+
+- **SMA 15:** Short-term moving average  
+- **SMA 30:** Long-term moving average  
+- **Daily Return:** Volatility indicator  
+- **Previous Close (Lag Feature):** Captures temporal dependency  
+
+Rows containing NaN values generated by rolling calculations were removed to maintain data integrity.
+
+
+## 8. Modeling Approach
+
+### Model Type
+- Regression-based machine learning models  
+- Linear Regression used as the primary implementation
+
+### Train–Test Strategy
+- Chronological split (80% training, 20% testing)
+- Prevents data leakage in time-series data
+
+### Feature Scaling
+- StandardScaler applied
+- Fitted only on training data
+
+
+
+## 9. Model Evaluation
+
+Model performance is evaluated using standard regression metrics:
+
+- **RMSE (Root Mean Squared Error)**
+- **MAE (Mean Absolute Error)**
+- **R² Score**
+
+Additional evaluation includes:
+- Residual analysis
+- Visualization of actual vs predicted prices
+
+These metrics measure accuracy, robustness, and explanatory power.
+
+
+
+## 10. Deployment Preparation
+
+GitHub does not execute Python code directly.  
+However, the project is prepared for deployment through:
+
+- Saved trained model (`.pkl`)
+- Saved scaler (`.pkl`)
+- Clean project structure
+- Web interface design
+
+The project can be deployed using platforms such as **Streamlit** or **Flask**, with GitHub serving as the version control and integration source.
+
+
+
+## 11. Cost & Resource Management
+
+### Resource Allocation
+- **Human resources:** Student team members (data analysis, modeling, documentation)
+- **Software:** Python, Pandas, NumPy, Scikit-learn, Matplotlib, Excel
+- **Hardware:** CPU/GPU resources for model training
+
+### Cost Assumptions
+- Student / team member: **RM 25/hour**
+- Specialist role (Data Analyst / ML Engineer): **RM 30/hour**
+- GPU / cloud usage: **RM 10/hour**
+
+### Budget Summary
+
+| Cost Category | Cost (RM) |
+|--------------|-----------|
+| Human Resources | 570 |
+| Hardware / Cloud | 80 |
+| Software / Licenses | 0 |
+| Communication & Miscellaneous | 120 |
+| **Total Budget** | **770** |
+
+Human resources represent the largest cost component.  
+Cost control focused on limiting GPU usage and using open-source tools.
+
+
+
+## 12. Risk & Quality Management
+
+### Risk Management
+Key risks identified include:
+- Data inconsistency
+- Lower-than-expected model accuracy
+- Schedule delays
+- Resource constraints
+
+Mitigation strategies were applied through better data preprocessing, feature engineering, and schedule adjustments.
+
+### Quality Management
+Quality assurance focused on:
+- Clean and validated datasets
+- Acceptable error metrics (RMSE, MAE)
+- Clear and readable visualizations
+- Well-structured and documented code
+
+
+
+## 13. Monitoring & Control
+
+Project progress was monitored by:
+- Comparing planned vs actual task completion
+- Tracking milestones
+- Applying corrective actions when delays were identified
+
+This ensured the project remained aligned with scope, schedule, and budget.
+
+
+
+## 14. Stakeholder & Communication Management
+
+Key stakeholders include:
+- Project team members
+- Course lecturer and supervisor
+- End users (students and investors)
+
+Regular communication and documentation updates were used to manage expectations and project progress.
+
+
+
+
 
 
 
